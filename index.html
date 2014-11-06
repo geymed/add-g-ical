@@ -1,8 +1,19 @@
 <html>
 <head>
 <title>Generate import calendar link</title>
+<script src="//code.jquery.com/jquery-2.1.0.min.js"/>
 </head>
 <body>
-
+<div>
+    <textarea id="url"></textarea>
+    <input id="submit" type="button" value="Generate link"></input>
+        <a href ="" id="result" target="_blank"> cal </a>
+</div>
+<script>
+  $(document).ready(function () {
+    var calurl = 'https://www.google.com/calendar/render?cid=webcal%3A%2F%2F' + encodeURI($('#url').val().split('//')[1]);
+    $('#result').attr('href',calurl).text(calurl);
+  });
+</script>
 </body>
 </html>
