@@ -11,8 +11,11 @@
 </div>
 <script>
   $(document).ready(function () {
+    $('#submit').on('click',function() {
     var calurl = 'https://www.google.com/calendar/render?cid=webcal%3A%2F%2F' + encodeURI($('#url').val().split('//')[1]);
     $('#result').attr('href',calurl).text(calurl);
+    //window.open(calurl,"_blank");
+    });
   });
 </script>
 </body>
