@@ -3,16 +3,17 @@
 <title>Generate import calendar link</title>
 <script src="//code.jquery.com/jquery-2.1.0.min.js"> </script>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div style="text-align: center;">
+<div class="wrapper">
     <h1>Generate A Calandar Import Link</h1>
     <div> <span> Enter your Google calendar export link - For instructions how to get it </span>
        <a target="_blank" href="https://support.google.com/calendar/answer/37111?hl=en&ref_topic=1672003">click here</a> </div>
-    <textarea style = "font-size: 24px; background-color: #eeeeff;" id="url"></textarea>
-    <a href="#" class="button large" id="submit">Generate link</a>
+    <textarea class="url box"  id="url"></textarea>
+    <a href="#" class="button large" id="submit">Generate Link</a>
     <br/>
-    <a href ="" id="result" target="_blank" style = "font-size: 24px"> cal </a>
+    <a href ="#" id="result" target="_blank">Link to create your calendar will appear here</a>
 </div>
 <script>
   $(document).ready(function () {

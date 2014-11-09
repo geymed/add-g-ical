@@ -1,0 +1,18 @@
+.url {
+  font-size: 24px;
+  background-color: #eeeeff;
+  width: 50%;
+  margin: 20px auto;
+  height: 120px;
+}
+
+#result {
+
+}
+#result[href='#'] {
+  color:#999999;
+}
+
+.wrapper {
+  text-align: center;
+}
