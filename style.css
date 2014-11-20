@@ -9,6 +9,7 @@
 .results {
 	text-align: left;
 	width:70%;
+	margin-left: 25%;
 }
 #result[href='#'] , #otherres[href='#'] {
   color:#999999;
