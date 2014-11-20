@@ -11,15 +11,21 @@
     <div> <span> Enter your Google calendar export link - For instructions how to get it </span>
        <a target="_blank" href="https://support.google.com/calendar/answer/37111?hl=en&ref_topic=1672003">click here</a> </div>
     <textarea class="url box"  id="url"></textarea>
-    <a href="#" class="button large" id="submit">Generate Link</a>
+    <a href="#" class="button large" id="submit">Generate Links</a>
     <br/>
-    <a href ="#" id="result" target="_blank">Link to create your calendar will appear here</a>
+    <span > Google web calendar link: </span>
+    <a href ="#" id="result" target="_blank">Link to create your google web calendar will appear here</a>
+    <span > Other calendar link: </span>
+    <a href ="#" id="otherres" target="_blank">Link to create your other calendar will appear here</a>
 </div>
 <script>
   $(document).ready(function () {
     $('#submit').on('click',function() {
-    var calurl = 'https://www.google.com/calendar/render?cid=webcal%3A%2F%2F' + encodeURI($('#url').val().split('//')[1]);
+     var noProtocolLink = $('#url').val().split('//')[1] 
+    var calurl = 'https://www.google.com/calendar/render?cid=webcal%3A%2F%2F' + encodeURI(noProtocolLink);
+    var webcalUrl = "webcal://"+ noProtocolLink;
     $('#result').attr('href',calurl).text(calurl);
+    $('#otherres').attr('href',webcalUrl).text(webcalUrl);
     //window.open(calurl,"_blank");
     });
   });

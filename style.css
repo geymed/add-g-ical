@@ -9,7 +9,7 @@
 #result {
 
 }
-#result[href='#'] {
+#results[href='#'] , #otherres[href='#'] {
   color:#999999;
 }
 
