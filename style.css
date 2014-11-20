@@ -6,7 +6,7 @@
   height: 120px;
 }
 
-#results {
+.results {
 	text-align: left;
 	width:70%;
 }
