@@ -6,10 +6,11 @@
   height: 120px;
 }
 
-#result {
-
+#results {
+	text-align: left;
+	width:70%;
 }
-#results[href='#'] , #otherres[href='#'] {
+#result[href='#'] , #otherres[href='#'] {
   color:#999999;
 }
 
